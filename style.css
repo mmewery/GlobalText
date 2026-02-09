@@ -297,14 +297,14 @@ footer{
         border: none;
         background-color: #0462d4;
         color: white;
-        top: 0px;
-        right: 0px;
+        top: 0;
+        right: 0;
         cursor: pointer;
     }
     .drop:hover ul{
         display: block;
         position: absolute;
-        right: 0px;
+        right: 0;
         background-color: #0462d4;
     }
     header ul{
