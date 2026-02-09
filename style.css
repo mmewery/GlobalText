@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+
+}
+body{
+    font-family: "Gabarito", serif;
+
+    color: #2D2F32;
+}
+a {
+    color: white;
+    font-size: 1.3rem;
+    text-align: right;
+}
+p {
+    font-family: "Roboto", serif;
+    color: rgba(45, 47, 50, 0.8);
+    font-size: 1.3rem;
+}
+main h1{
+    text-align: center;
+    display: block;
+}
+.specialisti h1, .portfolio h1 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* --------TEMPLATES-------- */
+
+.roundButton{
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #0462d4;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+    transition: 300ms;
+
+}
+.roundButton a, h2{
+    color: #2D2F32;
+}
+.roundButton:hover{
+    scale: 102%;
+    cursor: pointer;
+}
+
+.backgroundDiv{
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem 0 1.5rem;
+    max-width: 55vw;
+    color: rgba(45, 47, 50, 0.8);
+    box-shadow: 0 0 2rem #0462d4;
+    margin: 0 auto;
+}
+
+.formInput input{
+    border: none;
+    border-radius: 0.7rem;
+    background-color: rgba(45, 47, 50, 0.2);
+    padding: 0.625rem 1rem;
+    margin-bottom: 2rem ;
+    min-width: 200px;
+    width: 60%;
+}
+
+.navButton{
+    display: none
+}
+
+/* --------HEADER-------- */
+
+header {
+    background-color: #0462d4;
+    color: white;
+    box-shadow: 0 0 1rem white;
+    padding: 1rem 1rem 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+}
+header div{
+    margin: auto 0;
+    padding: 0 0 0.6rem 0;
+}
+
+#logo img{
+    height: 9%;
+}
+#logo span{
+    font-size: 3rem;
+    display: inline;
+    vertical-align: top;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 1.25rem;
+}
+nav li{
+    display: inline;
+    margin: 0 1rem;
+}
+ul a:hover{
+    color: #7CBAFE;
+    text-decoration: none;
+}
+/* --------FOOTER-------- */
+
+footer{
+    background-color: #0462d4;
+    color: white;
+    box-shadow: 0 0 1rem white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/*----------------INDEX----------------*/
+/* --------INFO-------- */
+#info{
+    text-align: center;
+    background-image: url("img/background.png");
+    min-height: 90vh;
+    overflow: hidden;
+    padding-bottom: 10vh;
+}
+#info img{
+    margin: 5% 0;
+}
+
+/*--------BENEFITS--------*/
+#benefits{
+    background-color: white;
+    min-height: 100vh;
+    padding: 0 15vw;
+}
+#benefits h2{
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 5% 0;
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    margin: 3vh 0;
+}
+.image img{
+    height: 10vh;
+    width: auto;
+    margin: 5% 3%;
+}
+.image h3{
+    margin: 5% 0 3% 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/*--------CONTACTS--------*/
+#contacts{
+    background-image: url("img/background.png");
+    text-align: center;
+    padding: 5% 0;
+}
+#contacts p{
+    margin-bottom: 5%;
+}
+#contacts .backgroundDiv{
+    box-shadow: none;
+}
+
+/*----------------PORTFOLIO----------------*/
+.portfolio{
+    background-image: url("img/expanded_background.png");
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 20px;
+}
+.portfolioElement{
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    color: rgba(45, 47, 50, 0.8);
+    box-shadow: 0 0 2rem #0462d4;
+    display: flex;
+    width: 70vw;
+    flex-direction: row;
+}
+.portfolioElement img{
+    width: 300px;
+    border-radius: 1.2rem;
+}
+.textBlock{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 1rem;
+}
+.textBlock{
+    font-size: 1.5rem;
+}
+/*----------------CENIK----------------*/
+.cenik{
+    background-image: url("img/background.png");
+    min-height: 90vh;
+    padding: 5% 0;
+}
+.cenik table{
+    margin: 0 auto;
+    text-align: center;
+}
+.cenik td{
+    font-family: "Roboto", serif;
+    color: rgba(45, 47, 50, 0.8);
+    font-size: 1.3rem;
+    padding: 0 10vw 4vh;
+}
+.cenik th{
+    padding: 0 7vw 4vh;
+    font-size: 2.3rem;
+}
+/*----------------SPECIALISTI----------------*/
+.specialisti{
+    background-image: url("img/expanded_background.png");
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 20px;
+}
+.person{
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem 1rem 1.5rem;
+    color: rgba(45, 47, 50, 0.8);
+    box-shadow: 0 0 2rem #0462d4;
+    display: flex;
+    width: 220px;
+    text-align: center;
+    flex-direction: column;
+}
+.person img{
+    border-radius: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/*----------------KONTAKTY----------------*/
+#contactsPage{
+    background-image: url("img/background.png");
+    text-align: center;
+    padding: 5% 0;
+}
+#contactsPage p{
+    margin-top: 1rem;
+    margin-bottom: 5%;
+    margin-inline: 1rem;
+    text-align: left;
+}
+#naseKontakty{
+    font-size: 2.2rem;
+}
+
+
+/*----------------MEDIA----------------*/
+@media (max-width: 1032px){
+    html{
+        font-size: 14px;
+    }
+
+    .backgroundDiv{
+        max-width: 90vw;
+    }
+
+    .navButton{
+        display: inline;
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: none;
+        background-color: #0462d4;
+        color: white;
+        top: 0px;
+        right: 0px;
+        cursor: pointer;
+    }
+    .drop:hover ul{
+        display: block;
+        position: absolute;
+        right: 0px;
+        background-color: #0462d4;
+    }
+    header ul{
+        display: none;
+    }
+    #logo span{
+        font-size: 2em;
+    }
+    #logo img{
+        height: 8%;
+    }
+
+    /*----------------INDEX----------------*/
+    #benefits{
+        padding: 3vw 10vw;
+        height: fit-content;
+    }
+    #benefits img{
+        display: none;
+    }
+    #benefits h3{
+        text-align: center;
+    }
+    #benefits p{
+        text-align: justify;
+    }
+
+    /*----------------CENIK----------------*/
+    .cenik td{
+        font-size: 1.3rem;
+        padding: 0 7vw 3vh;
+    }
+    .cenik th{
+        padding: 0 5vw 3vh;
+        font-size: 2.3rem;
+    }
+
+    /*----------------PORTFOLIO----------------*/
+    .portfolioElement{
+        flex-direction: column;
+    }
+    .portfolioElement img{
+        max-width: 70vw;
+        margin-bottom: 1rem;
+    }
+    .textBlock{
+        display: block;
+        text-align: center;
+    }
+
+    /*----------------KONTAKTY----------------*/
+    #contactsPage .formInput{
+        margin-top: 30vh;
+    }
+    #contactsPage p{
+        margin-inline: 2rem;
+    }
+    #naseKontakty{
+        margin-bottom: 2rem;
+    }
+    #contactsPage .formInput input{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
